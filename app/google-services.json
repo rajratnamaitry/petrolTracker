@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "998148274690",
+    "firebase_url": "https://petroltrackerdb.firebaseio.com",
+    "project_id": "petroltrackerdb",
+    "storage_bucket": "petroltrackerdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998148274690:android:3395f3ffb0e4994a",
+        "android_client_info": {
+          "package_name": "com.example.petroltracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998148274690-dh5vdk88shj8bgko85v0kr7b7ul7ap6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuiw-bCjuyutHth294LmhAfg4LMppoIBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998148274690-dh5vdk88shj8bgko85v0kr7b7ul7ap6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".addDataActivity">
+
+    <EditText
+        android:id="@+id/txtInMeter"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="333dp"
+        android:layout_height="54dp"
+        android:hint="@string/meterKmTxt"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtInAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInMeter" />
+
+    <EditText
+        android:id="@+id/txtInLiter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/liter"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInAmount" />
+
+    <TextView
+        android:id="@+id/txtRate"
+        android:layout_width="348dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/rate"
+        android:includeFontPadding="true"
+        android:padding="15dp"
+        android:text="@string/rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInLiter" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="323dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRate" />
+    <EditText
+        android:id="@+id/txtInDate"
+        android:layout_width="204dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/date"
+        android:inputType="datetime"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="109dp"
+        android:layout_height="51dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#4CAF50"
+        android:backgroundTint="#4CAF50"
+        android:enabled="true"
+        android:hint="@string/SAVE"
+        android:text="@string/SAVE"
+        android:textColor="#E6E3E3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="76dp"
+        android:layout_height="52dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="4dp"
+        android:background="#C3C3C3"
+        android:backgroundTint="#c3c3c3"
+        android:enabled="true"
+        android:hint="@string/CANCEL"
+        android:text="@string/CANCEL"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSave" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="97dp"
+        android:layout_height="52dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="#F30D0D"
+        android:backgroundTint="#FA0505"
+        android:enabled="true"
+        android:hint="@string/SAVE"
+        android:text="@string/DELETE"
+        android:textColor="#E6E3E3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        style="@android:style/Widget.Material.Light.DatePicker"
+        android:layout_width="358dp"
+        android:layout_height="431dp"
+        android:layout_above="@+id/btnCancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:animationCache="false"
+        android:background="#FBF9FD"
+        android:backgroundTint="#00EEEBEB"
+        android:datePickerMode="calendar"
+        android:fadingEdge="horizontal"
+        android:hapticFeedbackEnabled="false"
+        android:touchscreenBlocksFocus="false"
+        android:transitionGroup="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"></DatePicker>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
